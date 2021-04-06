@@ -8,7 +8,7 @@ $xs: 576px
 	padding: 0
 	margin: 0
 	border: 0
-	font-family: Montserrat, Raleway, BlinkMacSystemFont, 'Segoe UI', sans-serif
+	font-family: Montserrat, BlinkMacSystemFont, 'Segoe UI', sans-serif
 *, *:before,*:after
 	-moz-box-sizing: border-box
 	-webkit-box-sizing: border-box
@@ -60,18 +60,10 @@ select
 
 \:root
 	--white: rgba(255,255,255,1)
-	--white90: rgba(255,255,255,.9)
-	--black: rgba(0,0,0,1)
-	--black25: rgba(0,0,0,.25)
-	--black40: rgba(0,0,0,.4)
-	--black60: rgba(0,0,0,.6)
-	--black80: rgba(0,0,0,.8)
-	--black2: rgba(26,26,26,1)
-	--gray: rgba(170,170,170,1)
-	--gray2: rgba(139,139,139,1)
-	--gray3: rgba(196,196,196,1)
-	--gray4: rgba(144,144,144,1)
-	--gray-light: rgba(215,215,215,1)
+	--black: rgba(26,26,26,1)
+	--yellow: rgba(255,206,0,1)
+	--gray: rgba(157,157,157,1)
+	--gray-light: rgba(245,245,245,1)
 
 
 *, a
@@ -80,7 +72,8 @@ select
 .fix-cont
 	padding-left: 15px
 	padding-right: 15px
-	margin: 0 auto
+	margin-left: auto
+	margin-right: auto
 	height: 100%
 	width: 100%
 	min-width: 320px
@@ -90,69 +83,64 @@ select
 		padding-right: 0
 	@media(min-width:$xl)
 		max-width: 1170px
-.section-title
+
+.page-title
+	font-size: 30px
+	line-height: 38px
 	font-weight: 700
-	font-size: 14px
-	line-height: 130%
-	letter-spacing: 0.3em
 	text-transform: uppercase
+	background-color: var(--yellow)
 	text-align: center
-	margin-left: auto
-	margin-right: auto
-	width: 210px
-	padding: 25px 35px
-	border-left: 5px solid var(--black)
-	border-right: 5px solid var(--black)
+	margin-top: 60px
+	margin-bottom: 60px
+	padding-top: 15px
+	padding-bottom: 15px
 	@media(min-width:$xl)
-		font-size: 30px
-		line-height: 38px
-		width: 410px
-.separator
-	width: 100%
+		font-size: 36px
+		line-height: 44px
+		padding-top: 32px
+		padding-bottom: 32px
+.btn-read
+	display: block
+	position: relative
+	text-transform: uppercase
+	&.invert
+		& .btn-read__text
+			background-color: var(--black)
+			color: var(--white)
+		&:before
+			background-color: var(--white)
+	&__text
+		display: block
+		padding: 6px 20px
+		font-size: 16px
+		line-height: 20px
+		font-weight: 700
+		text-align: center
+		width: 100%
+		height: 100%
+		background-color: var(--white)
+		position: relative
+		z-index: 10
+	&:before
+		content: ''
+		position: absolute
+		bottom: -3px
+		right: -3px
+		width: 100%
+		height: 100%
+		background-color: var(--black)
+.load-more
 	display: flex
 	justify-content: center
-	&_black
-		& svg
-			& line, path
-				stroke: var(--black)
-
-.plain-text
-	font-weight: 300
-	font-size: 12px
-	line-height: 16px
-	@media(min-width:$xl)
-		font-size: 15px
-		line-height: 19px
-.bg-box
-	background: radial-gradient(50% 50% at 50% 50%, rgba(26, 21, 21, 0) 0%, rgba(1, 1, 1, 0.16) 100%), var(--white)
-.pc-only
-	display: none
-	@media(min-width:$xl)
-		display: block
-
-input, textarea
-	border-left: 5px solid var(--black)
-	border-bottom: 5px solid var(--black)
-	padding-left: 10px
-	background-color: transparent
-textarea
-	padding-top: 10px
-.underline-hover
-	@media(min-width:$xl)
-	    position: relative
-	    &:before
-	        content: ''
-	        position: absolute
-	        width: 100%
-	        height: 2px
-	        background: var(--gray)
-	        left: 0
-	        bottom: 0
-	        transition: .5s
-	        transform: scale(0)
-	        transform-origin: left
-	    &:hover
-	        &:before
-	            transform: scale(1)
-.red-text
-	color: red
+	margin-top: 100px
+	&__btn
+		padding: 20px 45px
+		font-weight: bold
+		font-size: 16px
+		line-height: 20px
+		text-transform: uppercase
+		background-color: var(--yellow)
+		@media(min-width:$xl)
+			font-size: 20px
+			line-height: 24px

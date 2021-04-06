@@ -1,0 +1,85 @@
+@@include('assets/html/head.html')
+
+<body id="body">
+
+@@include('assets/html/header1.html')
+
+<main>
+
+<h1 class="page-title fix-cont">
+	Contacts
+</h1>
+
+<section class="contacts">
+	<div class="contacts__fix-cont fix-cont">
+
+		<form class="contacts__form form">
+			<fieldset>
+				<legend class="form__legend">
+					Fill out the form to contact us
+				</legend>
+
+				<ul class="form__list">
+					<li class="form__item">
+						<label class="form__label">
+							<input type="text" class="form__input" placeholder="NAME*" required>
+							<span class="form__label-name">NAME*</span>
+						</label>
+					</li>
+					
+					<li class="form__item">
+						<label class="form__label">
+							<input type="email" class="form__input" placeholder="E-MAIL*" required>
+							<span class="form__label-name">E-MAIL*</span>
+						</label>
+					</li>
+					
+					<li class="form__item">
+						<label class="form__label">
+							<textarea type="text" class="form__input" placeholder="Comment*" required></textarea>
+							<span class="form__label-name">Comment*</span>
+						</label>
+					</li>
+				</ul>
+			</fieldset>
+
+			<div class="form__response">Success!</div>
+
+			<button class="form__submit">
+				Submit
+			</button>
+		</form>
+		
+		<ul class="contacts__links">
+			<li class="contacts__links-li">
+				<a href="#" class="contacts__links-a">Contact1</a>
+			</li>
+
+			<li class="contacts__links-li">
+				<a href="#" class="contacts__links-a">Contact1</a>
+			</li>
+
+			<li class="contacts__links-li">
+				<a href="#" class="contacts__links-a">Contact1</a>
+			</li>
+
+			<li class="contacts__links-li">
+				<a href="#" class="contacts__links-a">Contact1</a>
+			</li>
+
+			<li class="contacts__links-li">
+				<a href="#" class="contacts__links-a">Contact1</a>
+			</li>
+		</ul>
+
+	</div>
+</section>
+
+</main>
+
+@@include('assets/html/footer.html')
+
+</body>
+
+
+</html>

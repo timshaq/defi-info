@@ -1,0 +1,122 @@
+.exchanges
+	&__fix-cont
+	&__list
+	&__item
+		position: relative
+		& + .exchanges__item
+			margin-top: 60px
+	&__item-a
+	&__ph-box
+		display: block
+		margin-bottom: 20px
+		display: flex
+		justify-content: center
+		width: 166px
+		height: 166px
+		margin-right: auto
+		margin-left: auto
+		@media(min-width:$xl)
+			width: 261px
+			height: 261px
+			position: absolute
+			top: 40px
+			left: 40px
+			margin-bottom: 0
+	&__ph
+		width: 100%
+		height: 100%
+		object-fit: contain
+.exchanges-card
+	display: block
+	background-color: var(--black)
+	padding-top: 40px
+	padding-bottom: 40px
+	@media(min-width:$xl)
+		display: flex
+		flex-direction: column
+		border: 1px solid var(--black)
+		padding-right: 40px
+		padding-left: 340px
+		padding-bottom: 120px
+		padding-top: 40px
+		position: relative
+		min-height: 340px
+	&__title-box
+		display: block
+	&__title
+		position: relative
+		margin-bottom: 20px
+		display: block
+		font-weight: bold
+		text-transform: capitalize
+		text-align: center
+		font-size: 20px
+		line-height: 26px
+		color: var(--white)
+		@media(min-width:$xl)
+			font-size: 26px
+			line-height: 32px
+			text-align: left
+	&__p
+		font-size: 16px
+		line-height: 20px
+		margin-bottom: 20px
+		text-align: center
+		color: var(--white)
+		padding-left: 15px
+		padding-right: 15px
+		margin-right: auto
+		margin-left: auto
+		display: block
+		@media(min-width:$md)
+			width: 520px
+		@media(min-width:$xl)
+			margin-bottom: 0
+			font-size: 16px
+			line-height: 20px
+			width: 546px
+			text-align: left
+			margin-right: 0
+			margin-left: 0
+			padding-left: 0
+			padding-right: 0
+	&__link-box
+		@media(min-width:$md)
+			display: flex
+			margin-top: 40px
+			align-items: center
+		@media(min-width:$xl)
+			display: block
+			margin: 0
+
+	&__ref
+		max-width: 260px
+		display: block
+		background-color: var(--yellow)
+		font-weight: bold
+		font-size: 18px
+		line-height: 22px
+		padding: 10px 20px
+		text-align: center
+		text-transform: uppercase
+		margin-right: auto
+		margin-left: auto
+		@media(min-width:$md)
+		@media(min-width:$xl)
+			width: 216px
+			position: absolute
+			bottom: 40px
+			left: 340px
+	&__read
+		max-width: 260px
+		margin-right: auto
+		margin-left: auto
+		margin-top: 40px
+		@media(min-width:$md)
+			margin-top: 0
+		@media(min-width:$xl)
+			width: 91px
+			position: absolute
+			bottom: 40px
+			right: 40px
+

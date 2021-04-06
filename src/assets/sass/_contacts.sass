@@ -1,0 +1,132 @@
+.contacts
+	&__fix-cont
+		padding-left: 0
+		padding-right: 0
+		@media(min-width:$xl)
+			display: flex
+	&__form
+		background-color: var(--yellow)
+		padding-left: 15px
+		padding-right: 15px
+		@media(min-width:$xl)
+			width: 66%
+		& fieldset
+			display: block
+	&__links
+		background-color: var(--black)
+		padding-left: 15px
+		padding-right: 15px
+		display: flex
+		flex-direction: column
+		align-items: center
+		padding: 30px 0
+		@media(min-width:$xl)
+			width: 34%
+			justify-content: center
+	&__links-li
+		& + .contacts__links-li
+			margin-top: 30px
+			@media(min-width:$xl)
+				margin-top: 60px
+	&__links-a
+		color: var(--yellow)
+		font-size: 20px
+		line-height: 26px
+		@media(min-width:$xl)
+			font-size: 26px
+			line-height: 32px
+.form
+	padding-top: 60px
+	padding-bottom: 60px
+	@media(min-width:$xl)
+		display: flex
+		flex-direction: column
+		align-items: center
+	&__legend
+		font-size: 18px
+		line-height: 26px
+		margin-bottom: 40px
+		text-align: center
+		@media(min-width:$xl)
+			font-size: 26px
+			line-height: 32px
+	&__list
+		margin-bottom: 30px
+		@media(min-width:$xl)
+			margin-bottom: 40px
+			width: 546px
+	&__item
+		& + .form__item
+			margin-top: 30px
+			@media(min-width:$xl)
+				margin-top: 35px
+
+	&__label
+		position: relative
+		display: block
+	&__input
+		font-weight: 700
+		font-size: 16px
+		line-height: 20px
+		color: var(--gray)
+		border: 1px solid var(--black)
+		height: 100%
+		width: 100%
+		padding: 0 15px
+		background-color: var(--gray-light)
+		height: 40px
+		@media(min-width:$xl)
+			height: 64px
+			font-size: 20px
+			line-height: 24px
+			padding: 20px 25px
+		&:focus
+			& + .form__label-name
+				opacity: 1
+				visibility: visible
+				transform: translate(0,10%)
+				transition: all linear .4s
+	& textarea.form__input
+		height: 100px
+		padding-top: 10px
+		@media(min-width:$xl)
+			height: 200px
+	&__label-name
+		font-weight: 700
+		font-size: 14px
+		line-height: 16px
+		position: absolute
+		top: 100%
+		left: 15px
+		transform: translate(0,0)
+		transition: all linear .4s
+		opacity: 0
+		visibility: hidden
+		@media(min-width:$xl)
+			font-size: 20px
+			line-height: 24px
+			height: 64px
+			left: 25px
+	&__response
+		min-height: 40px
+		padding: 15px
+		font-size: 16px
+		line-height: 20px
+		text-align: center
+		@media(min-width:$xl)
+			font-size: 20px
+			line-height: 24px
+	&__submit
+		width: 100%
+		font-weight: bold
+		font-size: 16px
+		line-height: 20px
+		padding: 20px 0
+		text-align: center
+		background-color: var(--black)
+		color: var(--white)
+		text-transform: uppercase
+		@media(min-width:$xl)
+			width: 356px
+			font-size: 20px
+			line-height: 24px

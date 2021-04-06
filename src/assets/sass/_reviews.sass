@@ -1,0 +1,96 @@
+.reviews
+	&__fix-cont
+	&__list
+	&__item
+		& + .reviews__item
+			margin-top: 60px
+	&__item-a
+.review-card
+	display: block
+	@media(min-width:$xl)
+		display: flex
+		flex-direction: column
+		border: 1px solid var(--black)
+		padding-right: 30px
+		padding-left: 380px
+		padding-bottom: 105px
+		padding-top: 30px
+		position: relative
+		min-height: 356px
+	&__ph-box
+		margin-bottom: 20px
+		display: flex
+		justify-content: center
+		width: 100%
+		max-height: 356px
+		@media(min-width:$xl)
+			width: 356px
+			height: 100%
+			margin-bottom: 40px
+			position: absolute
+			top: 0
+			left: 0
+	&__ph
+		width: 100%
+		height: 100%
+		object-fit: cover
+		object-position: center center
+	&__title
+		position: relative
+		margin-bottom: 20px
+		@media(min-width:$xl)
+			margin-bottom: 40px
+		&:before
+			content: ''
+			position: absolute
+			bottom: -8px
+			right: -8px
+			width: 100%
+			height: 100%
+			background-color: var(--black)
+	&__title-box
+		background-color: var(--yellow)
+		padding-top: 15px
+		padding-bottom: 15px
+		position: relative
+		z-index: 10
+		@media(min-width:$xl)
+			padding-top: 37px
+			padding-bottom: 37px
+	&__title-txt
+		display: block
+		font-weight: bold
+		text-transform: capitalize
+		text-align: center
+		font-size: 20px
+		line-height: 26px
+		overflow: hidden
+		text-overflow: ellipsis
+		display: -moz-box
+		display: -webkit-box
+		-webkit-box-orient: vertical
+		-webkit-line-clamp: 2
+		max-height: 82px
+		@media(min-width:$xl)
+			font-size: 26px
+			line-height: 32px
+			-webkit-line-clamp: 1
+			max-height: 32px
+	&__p
+		font-size: 16px
+		line-height: 20px
+		margin-bottom: 20px
+		text-align: center
+		@media(min-width:$xl)
+			margin-bottom: 0
+			font-size: 20px
+			line-height: 24px
+			width: 641px
+			text-align: left
+	&__read
+		width: 100%
+		@media(min-width:$xl)
+			width: 91px
+			position: absolute
+			bottom: 20px
+			right: 30px
