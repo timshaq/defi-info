@@ -1,0 +1,300 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat/Montserrat-Light.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat/Montserrat-LightItalic.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat/Montserrat-ExtraBold.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat/Montserrat-Black.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Print Clearly';
+  src: url("../fonts/Print Clearly/Print Clearly.woff2") format("woff2"), url("../fonts/Print Clearly/Print Clearly.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: Montserrat, Raleway, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+*:focus, *:active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+html {
+  overflow-x: hidden;
+  max-width: 1920px;
+  min-width: 320px;
+  position: relative;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+:root {
+  --white: rgba(255,255,255,1);
+  --white90: rgba(255,255,255,.9);
+  --black: rgba(0,0,0,1);
+  --black25: rgba(0,0,0,.25);
+  --black40: rgba(0,0,0,.4);
+  --black60: rgba(0,0,0,.6);
+  --black80: rgba(0,0,0,.8);
+  --black2: rgba(26,26,26,1);
+  --gray: rgba(170,170,170,1);
+  --gray2: rgba(139,139,139,1);
+  --gray3: rgba(196,196,196,1);
+  --gray4: rgba(144,144,144,1);
+  --gray-light: rgba(215,215,215,1);
+}
+
+*, a {
+  color: var(--black);
+}
+
+.fix-cont {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  min-width: 320px;
+}
+
+@media (min-width: 768px) {
+  .fix-cont {
+    max-width: 708px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .fix-cont {
+    max-width: 1170px;
+  }
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 130%;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 210px;
+  padding: 25px 35px;
+  border-left: 5px solid var(--black);
+  border-right: 5px solid var(--black);
+}
+
+@media (min-width: 1200px) {
+  .section-title {
+    font-size: 30px;
+    line-height: 38px;
+    width: 410px;
+  }
+}
+
+.separator {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.separator_black svg line, .separator_black svg path {
+  stroke: var(--black);
+}
+
+.plain-text {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+@media (min-width: 1200px) {
+  .plain-text {
+    font-size: 15px;
+    line-height: 19px;
+  }
+}
+
+.bg-box {
+  background: -webkit-radial-gradient(50% 50%, 50% 50%, rgba(26, 21, 21, 0) 0%, rgba(1, 1, 1, 0.16) 100%), var(--white);
+  background: radial-gradient(50% 50% at 50% 50%, rgba(26, 21, 21, 0) 0%, rgba(1, 1, 1, 0.16) 100%), var(--white);
+}
+
+.pc-only {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .pc-only {
+    display: block;
+  }
+}
+
+input, textarea {
+  border-left: 5px solid var(--black);
+  border-bottom: 5px solid var(--black);
+  padding-left: 10px;
+  background-color: transparent;
+}
+
+textarea {
+  padding-top: 10px;
+}
+
+@media (min-width: 1200px) {
+  .underline-hover {
+    position: relative;
+  }
+  .underline-hover:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: var(--gray);
+    left: 0;
+    bottom: 0;
+    -webkit-transition: .5s;
+    transition: .5s;
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: left;
+        -ms-transform-origin: left;
+            transform-origin: left;
+  }
+  .underline-hover:hover:before {
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.red-text {
+  color: red;
+}
+
+/*# sourceMappingURL=srcmaps/style.css.map */
