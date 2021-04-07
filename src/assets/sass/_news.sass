@@ -2,22 +2,21 @@
 	&__fix-cont
 		display: flex
 		flex-wrap: wrap
-		justify-content: center
 .news-card
 	position: relative
 	width: 100%
 	&:not(:last-child)
 		margin-bottom: 40px
 	@media(min-width:$md)
-		width: 40%
+		width: 329px
 		&:nth-child(2n)
-			margin-left: 25px
+			margin-left: 50px
 			@media(min-width:$xl)
 				margin-left: 0
 	@media(min-width:$xl)
-		width: 20%
-		&:not(:first-child)
-			margin-left: 25px
+		width: 264px
+		&:not(:nth-child(4n))
+			margin-right: 38px
 	&__ph-box
 		display: block
 	&__ph
@@ -65,4 +64,118 @@
 		font-weight: 700
 		font-size: 14px
 		line-height: 16px
+.prefeed
+	margin-bottom: 60px
+	&__fix-cont
+		display: flex
+		flex-wrap: wrap
+.news-card-md
+	@media(min-width:$md)
+		&:nth-child(3n)
+			width: 100%
+	@media(min-width:$xl)
+		width: 360px
+		&:nth-child(3n)
+			width: 360px
+		&:not(:nth-child(4n))
+			margin-right: 0
+		&:not(:nth-child(3n))
+			margin-right: 45px
+		& .news-card__ph-box
+			height: 356px
+		& .news-card__ph
+			max-height: 356px
 
+.last-news__fix-cont
+	@media(min-width:$xl)
+		display: flex
+		justify-content: space-between
+		margin-bottom: 60px
+.news-card-lg
+	@media(min-width:$md)
+		width: 100%
+	@media(min-width:$xl)
+		width: 450px
+		margin-bottom: 0
+		&:not(:nth-child(4n))
+			margin-right: 0
+		&:not(:last-child)
+			margin-bottom: 0
+		& .news-card__ph-box
+			height: 450px
+		& .news-card__ph
+			max-height: 450px
+		& .news-card__body
+			height: 200px
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+.tn-box
+	margin-bottom: 40px
+	@media(min-width:$xl)
+		width: 450px
+		margin-bottom: 0
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+.news-card-tn
+	@media(min-width:$md)
+		position: relative
+		width: 100%
+		&:not(:nth-child(4n))
+			margin-right: 0
+		&:nth-child(2n)
+			margin-left: 0
+		& .news-card__ph-box
+			width: 165px
+			height: 100%
+			position: absolute
+			top: 0
+			left: 0
+		& .news-card__body
+			padding-left: 175px
+			padding-top: 30px
+			padding-bottom: 15px
+			height: 165px
+			border-top: 1px solid var(--black)
+		& .news-card__tag
+			position: absolute
+			bottom: 15px
+			left: 175px
+		& .news-card__read
+			position: absolute
+			bottom: 15px
+			right: 15px
+
+.tn2-box
+	@media(min-width:$md)
+		display: flex
+	@media(min-width:$xl)
+		flex-direction: column
+		width: 166px
+		justify-content: space-between
+.news-card-tn2
+	@media(min-width:$md)
+		width: 329px
+		&:not(:nth-child(4n))
+			margin-right: 0
+	@media(min-width:$xl)
+		width: 100%
+		& .news-card__ph-box
+			height: 166px
+		& .news-card__ph
+			max-height: 356px
+		& .news-card__title
+			font-size: 16px
+			line-height: 20px
+		& .news-card__body
+			padding-top: 10px
+			padding-bottom: 10px
+			position: relative
+		& .news-card__tag
+			position: absolute
+			top: 0
+			left: 0
+			transform: translateY(-100%)
+		& .news-card__read
+			width: 100%
