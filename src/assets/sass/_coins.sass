@@ -1,0 +1,71 @@
+.coins
+	&__fix-cont
+
+	&__list
+
+	&__item
+
+.coin
+	border: 5px solid var(--yellow)
+	display: flex
+	flex-wrap: wrap
+	padding: 10px
+	@media(min-width:$md)
+		flex: 1 1 100%
+		padding: 5px
+	@media(min-width:$xl)
+		padding: 10px
+	&__num,
+	&__icon-box,
+	&__title,
+	&__chain,
+	&__category,
+	&__locked,
+	&__percent
+		font-weight: 700
+		font-size: 18px
+		line-height: 24px
+		width: 100%
+		display: flex
+		justify-content: center
+		text-align: center
+		margin: 20px 0
+		@media(min-width:$md)
+			align-items: center
+			margin: 0 5px
+			flex: 1
+			font-size: 16px
+			line-height: 20px
+		@media(min-width:$xl)
+			font-size: 24px
+			line-height: 29px
+	&__num
+	&__icon-box
+	&__icon
+		width: 50px
+		max-height: 50px
+		object-fit: contain
+	&__title
+	&__chain
+	&__category
+	&__locked
+	&__percent
+		width: 100%
+		@media(min-width:$md)
+			flex: 1
+	&__num,
+	&__icon-box
+		@media(min-width:$md)
+			width: 50px
+			max-width: 50px
+	&__percent_minus
+		color: red
+	&__percent_plus
+		color: green
+	&__mob-subtitle
+		@media(min-width:$md)
+			display: none
+.coin-names
+		display: none
+		@media(min-width:$md)
+			display: flex

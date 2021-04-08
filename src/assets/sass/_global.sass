@@ -62,6 +62,7 @@ select
 	--white: rgba(255,255,255,1)
 	--black: rgba(26,26,26,1)
 	--yellow: rgba(255,206,0,1)
+	--yellow30: rgba(255,206,0,.3)
 	--gray: rgba(157,157,157,1)
 	--gray-light: rgba(245,245,245,1)
 
@@ -144,3 +145,14 @@ select
 		@media(min-width:$xl)
 			font-size: 20px
 			line-height: 24px
+.hr-bottom
+	position: relative
+	margin-bottom: 20px
+	&:before
+		content: ''
+		position: absolute
+		bottom: -10px
+		left: 0
+		width: 165px
+		height: 3px
+		background-color: var(--black)

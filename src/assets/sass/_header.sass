@@ -1,0 +1,170 @@
+.header-and-banner
+	position: sticky
+	top: 0
+	left 0
+	z-index: 50
+.header
+	background-color: var(--yellow)
+	padding: 10px 0
+	position: sticky
+	top: 0
+	left 0
+	&__fix-cont
+		display: flex
+		justify-content: space-between
+		align-items: center
+		position: relative
+		@media(min-width:$xl)
+			justify-content: flex-start
+	&.menu
+		@media(max-width:1199px)
+			& .header__nav
+				display: flex
+				flex-direction: column
+				align-items: center
+				position: fixed
+				top: 0
+				left: 0
+				z-index: 100
+				width: 100%
+				height: 100%
+				background-color: var(--yellow)
+				padding-top: 60px
+				padding-bottom: 30px
+				padding-left: 15px
+				padding-right: 15px
+			& .header__burger-close
+				display: block
+				position: absolute
+				top: 10px
+				right: 10px
+				width: 30px
+				height: 30px
+				& svg
+					width: 100%
+					height: 100%
+					object-fit: cover
+			& .header__list
+				display: flex
+				flex-direction: column
+				align-items: center
+			& .header__list-li
+				&:not(:last-child)
+					margin-bottom: 20px
+			& .header__list-a
+				padding: 5px 10px
+				font-size: 16px
+				line-height: 20px
+			& .header__social
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 100%
+				max-width: 290px
+				margin-top: auto
+	&.search
+		& .header__search
+			position: absolute
+			background-color: var(--white)
+			left: 0
+			width: 100%
+			display: flex
+			align-items: center
+			flex: 1 1 100%
+			height: 40px
+		& .header__search-input
+			flex: 1
+			height: 100%
+			padding-left: 10px
+		& .header__search-btn,
+		& .header__search-close
+			flex: .2
+			height: 20px
+			& svg
+				width: 100%
+				height: 100%
+				object-fit: contain
+	&__search
+		display: none
+	&__controls
+		display: flex
+		@media(min-width:$xl)
+			margin-left: 10px
+	&__burger
+		display: block
+		width: 30px
+		height: 30px
+		margin-left: 20px
+		& svg
+			width: 100%
+			height: 100%
+			object-fit: contain
+			& *
+				stroke: var(--black)
+				fill: var(--black)
+		@media(min-width:$xl)
+			display: none
+	&__search-btn
+		width: 30px
+		height: 30px
+		& svg
+			width: 100%
+			height: 100%
+			object-fit: contain
+			& *
+				stroke: var(--black)
+	&__logo-box
+		height: 40px
+		display: flex
+		align-items: center
+		& svg
+			width: 40px
+			height: 100%
+			object-fit: cover
+	&__logo-text
+		font-family: 'Print Clearly'
+		margin-left: 10px
+		font-size: 30px
+		line-height: 30px
+		@media(min-width:$xl)
+			display: none
+	&__burger-close
+		display: none
+	&__nav
+		display: none
+		@media(min-width:$xl)
+			display: flex
+			justify-content: space-between
+			width: 100%
+	&__list
+		@media(min-width:$xl)
+			display: flex
+			margin-left: 30px
+	&__list-li
+	&__list-a
+		display: block
+		padding: 8px 12px
+		font-size: 20px
+		line-height: 24px
+		text-transform: uppercase
+		&.active
+			background-color: var(--black)
+			color: var(--yellow)
+	&__social
+		display: flex
+		@media(min-width:$xl)
+			margin-left: 50px
+			align-items: center
+	&__social-li
+		&:not(:first-child)
+			margin-left: 10px
+	&__social-a
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 36px
+		height: 30px
+		& svg
+			width: 100%
+			height: 100%
+			object-fit: contain

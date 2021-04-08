@@ -1,5 +1,118 @@
+<div class="header-and-banner">
+	
 <header id="header" class="header">
 	<div class="header__fix-cont fix-cont">
-		HEADER 1
+		<div class="header__logo-box">
+			@@include('logo.html')
+			<span class="header__logo-text">
+				deficoins.info
+			</span>
+		</div>
+
+		<nav class="header__nav">
+		
+			<ul class="header__list">
+				<li class="header__list-li">
+					<a href="#" class="header__list-a">
+						Coins
+					</a>
+				</li>
+				<li class="header__list-li">
+					<a href="#" class="header__list-a active">
+						News
+					</a>
+				</li>
+				<li class="header__list-li">
+					<a href="#" class="header__list-a">
+						Reviews
+					</a>
+				</li>
+				<li class="header__list-li">
+					<a href="#" class="header__list-a">
+						Exchanges
+					</a>
+				</li>
+				<li class="header__list-li">
+					<a href="#" class="header__list-a">
+						Marketcap
+					</a>
+				</li>
+				<li class="header__list-li">
+					<a href="#" class="header__list-a">
+						Contacts
+					</a>
+				</li>
+			</ul>
+
+			<ul class="header__social">
+
+				<li class="header__social-li">
+					<a href="#" class="header__social-a">
+						@@include('tw.html')
+					</a>
+				</li>
+
+				<li class="header__social-li">
+					<a href="#" class="header__social-a">
+						@@include('vk.html')
+					</a>
+				</li>
+
+				<li class="header__social-li">
+					<a href="#" class="header__social-a">
+						@@include('fb.html')
+					</a>
+				</li>
+				
+			</ul>
+
+			<button id="burgerClose" type="button" class="header__burger-close close-btn">
+					@@include('close.html')
+			</button>
+			
+		</nav>
+
+		<div class="header__controls">
+			<button id="searchOpen" class="header__search-btn search-btn header__col">
+				@@include('search.html')
+			</button>
+
+			<button id="burgerOpen" type="button" class="header__burger">
+					<svg width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M30 0.601562H0V2.72308H30V0.601562Z" fill="white"/>
+						<path d="M30 10.1035H0V12.2251H30V10.1035Z" fill="white"/>
+						<path d="M30 19.6653H0V21.7868H30V19.6653Z" fill="white"/>
+					</svg>
+			</button>
+		</div>
+
+
+		<form id="searchForm" class="header__search">
+			<input type="text" class="header__search-input" placeholder="How to sell Bitcoin?">
+
+			<button type="submit" class="header__search-btn search-btn">
+				@@include('search.html')
+			</button>
+
+			<button id="searchClose" type="button" class="header__search-close close-btn">
+				@@include('close.html')
+			</button>
+		</form>
 	</div>
 </header>
+
+<div class="banner">
+	<picture>
+		<!-- DESKTOP -->
+		<source srcset="assets/img/footer-banner-tab.png" media="(min-width: 728px)">
+			<!-- DESKTOP -->
+		<!-- MOB -->
+		<source srcset="assets/img/footer-banner-mob.png" media="(min-width: 320px)">
+			<!-- MOB -->
+		<!-- Internet Explorer (DESKTOP) -->
+		<img src="assets/img/footer-banner-tab.png" alt="" class="banner-wrapper__ph">
+			<!-- Internet Explorer (DESKTOP) -->
+	</picture>
+</div>
+
+</div>

@@ -28,6 +28,9 @@
 		&.active
 			background-color: var(--yellow)
 			color: var(--black)
+		&:hover
+			background-color: var(--yellow)
+			color: var(--black)
 	&__other-links
 		display: flex
 		flex-wrap: wrap
@@ -45,21 +48,24 @@
 		@media(min-width:$xl)
 			width: 20%
 	&__links-li
-
 	&__links-a
 		font-size: 18px
 		line-height: 22px
 		text-transform: uppercase
 		color: var(--white)
+		&:hover
+			color: var(--yellow)
 	&__social
 		margin-top: 100px
 		display: flex
 		flex-wrap: wrap
-		justify-content: space-between
+		justify-content: center
 		max-width: 450px
 		margin-right: auto
 		margin-left: auto
 	&__social-li
+		&:not(:first-child)
+			margin-left: 30px
 	&__social-a
 		display: flex
 		justify-content: center
